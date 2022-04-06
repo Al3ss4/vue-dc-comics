@@ -83,7 +83,38 @@
         </div>
       </div>
       <div class="logo-footer">
-        <img src="../assets/img/dc-logo-bg.png" alt="logo DC">
+        <img src="../assets/img/dc-logo-bg.png" alt="logo DC" />
+      </div>
+    </div>
+    <div class="footer-btm clearfix">
+      <div class="container">
+        <h3 class="uppercase">Sign-Up Now!</h3>
+        <img
+          class="float-right padding"
+          src="../assets/img/footer-facebook.png"
+          alt=""
+        />
+        <img
+          class="float-right padding"
+          src="../assets/img/footer-twitter.png"
+          alt=""
+        />
+        <img
+          class="float-right padding"
+          src="../assets/img/footer-youtube.png"
+          alt=""
+        />
+        <img
+          class="float-right padding"
+          src="../assets/img/footer-pinterest.png"
+          alt=""
+        />
+        <img
+          class="float-right padding"
+          src="../assets/img/footer-periscope.png"
+          alt=""
+        />
+        <h2 class="uppercase float-right">Follow Us</h2>
       </div>
     </div>
   </footer>
@@ -99,6 +130,7 @@ export default {
 $bg-main: #ffffff;
 $color-nav-bar: #67626a;
 $color-border-btm: #0282f9;
+$color-footer-btm: #303030;
 
 .footer-top {
   background-color: $color-border-btm;
@@ -135,5 +167,72 @@ $color-border-btm: #0282f9;
   background-image: url(../assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  height: 400px;
+  position: relative;
+  padding: 50px 200px;
+
+  .link-merchandise {
+    display: flex;
+
+    h3 {
+      color: white;
+      margin: 10px 20px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+
+      a {
+        color: #576064;
+        text-decoration-line: none;
+      }
+    }
+  }
+  img {
+    width: 600px;
+    padding: 0 20px;
+    position: absolute;
+    top: -100px;
+    right: 80px;
+  }
+}
+.footer-btm {
+  background-color: $color-footer-btm;
+  z-index: 300;
+  padding: 25px 200px;
+  height: 90px;
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h3 {
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #0282f9;
+    width: 11%;
+    display: inline-block;
+  }
+  h2 {
+    color: #0282f9;
+    margin-right: 10px;
+    line-height: 45px;
+  }
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.padding {
+  padding: 5px;
 }
 </style>
