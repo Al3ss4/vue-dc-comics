@@ -1,12 +1,13 @@
 <template>
   <footer>
-    <div class="merchandise">
+    <div class="footer-top">
       <ul>
         <li>
-          <img class="img-digital-comics"
+          <img
+            class="img-digital-comics"
             src="../assets/img/buy-comics-digital-comics.png"
             alt="digital-comics"
-          /><a href="#" >DIGITAL COMICS</a>
+          /><a href="#">DIGITAL COMICS</a>
         </li>
         <li>
           <img
@@ -21,7 +22,8 @@
           /><a href="#">SUBSCRIPTION</a>
         </li>
         <li>
-          <img class="img-shop"
+          <img
+            class="img-shop"
             src="../assets/img/buy-comics-shop-locator.png"
             alt="shop-locator"
           /><a href="#">COMIC SHOP LOCATOR</a>
@@ -33,6 +35,56 @@
           /><a href="#">DC POWER VISA</a>
         </li>
       </ul>
+    </div>
+    <div class="footer-middle">
+      <div class="link-merchandise">
+        <div class="col-1">
+          <h3>DC COMICS</h3>
+          <ul>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Comics</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+          <h3>SHOP</h3>
+          <ul>
+            <li><a href="#">Shop DC</a></li>
+            <li><a href="#">Shop DC Collectibles</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h3>DC</h3>
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy policy (New)</a></li>
+            <li><a href="#">Ad Choise</a></li>
+            <li><a href="#">Adverstising</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">subscriptions</a></li>
+            <li><a href="#">Talent Workshops</a></li>
+            <li><a href="#">CPSC Certificates</a></li>
+            <li><a href="#">Ratings</a></li>
+            <li><a href="#">Shop Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3>SITES</h3>
+          <ul>
+            <li><a href="#">DC</a></li>
+            <li><a href="#">MAD Magazine</a></li>
+            <li><a href="#">DC Kids</a></li>
+            <li><a href="#">DC Universe</a></li>
+            <li><a href="#">DC Power Visa</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo-footer">
+        <img src="../assets/img/dc-logo-bg.png" alt="logo DC">
+      </div>
     </div>
   </footer>
 </template>
@@ -48,7 +100,7 @@ $bg-main: #ffffff;
 $color-nav-bar: #67626a;
 $color-border-btm: #0282f9;
 
-.merchandise {
+.footer-top {
   background-color: $color-border-btm;
 
   ul {
@@ -64,20 +116,24 @@ $color-border-btm: #0282f9;
       img {
         width: 80px;
         padding: 0 10px;
-        
       }
-      .img-shop{
-          width: 60px;
-        }
-        .img-digital-comics{
-          width: 70px;
-        }
+      .img-shop {
+        width: 60px;
+      }
+      .img-digital-comics {
+        width: 70px;
+      }
       a {
         color: $bg-main;
         text-decoration-line: none;
-        
       }
     }
   }
+}
+
+.footer-middle {
+  background-image: url(../assets/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
