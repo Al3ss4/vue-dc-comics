@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>MAIN</h1>
+    <main>--&gt; Content gose here &lt;--</main>
   </main>
 </template>
 
@@ -12,4 +12,15 @@ export default {
 
 <style lang="scss" scoped >
 
+$bg-main: #1c1c1c;
+$color-main: white;
+
+main {
+  background-image: $bg-main;
+  color: $color-main;
+  margin: 30px 70px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+}
 </style>
