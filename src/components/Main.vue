@@ -1,6 +1,6 @@
 <template>
   <main>
-    <main>--&gt; Content gose here &lt;--</main>
+    <main>--&gt; Content goes here &lt;--</main>
   </main>
 </template>
 
@@ -19,10 +19,10 @@ main {
   background-color: $bg-main;
   color: $color-main;
   margin: 0px 0px;
-  padding: 30px 20px;
+  padding: 30px 90px;
   display: flex;
   align-items: flex-start;
-  font-size: 20px;
+  font-size: 30px;
   
 }
 </style>
