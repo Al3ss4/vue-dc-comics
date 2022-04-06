@@ -3,10 +3,10 @@
     <div class="merchandise">
       <ul>
         <li>
-          <img
+          <img class="img-digital-comics"
             src="../assets/img/buy-comics-digital-comics.png"
             alt="digital-comics"
-          /><a href="#">DIGITAL COMICS</a>
+          /><a href="#" >DIGITAL COMICS</a>
         </li>
         <li>
           <img
@@ -21,7 +21,7 @@
           /><a href="#">SUBSCRIPTION</a>
         </li>
         <li>
-          <img
+          <img class="img-shop"
             src="../assets/img/buy-comics-shop-locator.png"
             alt="shop-locator"
           /><a href="#">COMIC SHOP LOCATOR</a>
@@ -59,12 +59,23 @@ $color-border-btm: #0282f9;
     li {
       text-decoration: none;
       list-style: none;
+      display: flex;
+      align-items: center;
       img {
-        width: 60px;
+        width: 80px;
+        padding: 0 10px;
+        
       }
+      .img-shop{
+          width: 60px;
+        }
+        .img-digital-comics{
+          width: 70px;
+        }
       a {
         color: $bg-main;
         text-decoration-line: none;
+        
       }
     }
   }
