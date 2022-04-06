@@ -34,9 +34,6 @@ $bg-site: #363434;
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background-color: $bg-site;
-  
+  -moz-osx-font-smoothing: grayscale; 
 }
 </style>

@@ -16,11 +16,13 @@ $bg-main: #1c1c1c;
 $color-main: white;
 
 main {
-  background-image: $bg-main;
+  background-color: $bg-main;
   color: $color-main;
-  margin: 30px 70px;
+  margin: 0px 0px;
+  padding: 30px 20px;
   display: flex;
   align-items: flex-start;
   font-size: 20px;
+  
 }
 </style>
