@@ -29,18 +29,19 @@ export default {
 <style lang="scss" scoped >
 $bg-main: #ffffff;
 $color-nav-bar: #67626a;
+$color-border-btm: #0282f9;
 
 header {
   background-color: $bg-main;
   display: flex;
   justify-content: space-around;
+  min-height: 60px;
 }
 
 .nav-bar {
   display: flex;
 
   ul {
-   
     li {
       text-decoration: none;
       list-style: none;
@@ -49,8 +50,10 @@ header {
         text-decoration-line: none;
       }
       a:hover {
-        color: blue;
+        color: $color-border-btm;
+        border-bottom: 2px solid $color-border-btm;
       }
+      
     }
   }
 }
