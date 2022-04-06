@@ -37,6 +37,6 @@ $bg-site: #363434;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-color: $bg-site;
-  margin-top:20px;
+  
 }
 </style>

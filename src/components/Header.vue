@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div>
+    <div class="logo">
       <img src="../assets/img/dc-logo.png" alt="logo" />
     </div>
     <div class="nav-bar">
@@ -36,24 +36,36 @@ header {
   display: flex;
   justify-content: space-around;
   min-height: 60px;
+  padding: 10px 0;
+  align-items: center;
 }
 
+.logo{
+  img{
+    width: 70px;
+  }
+}
 .nav-bar {
-  display: flex;
-
+  
   ul {
+    display: flex;
+    justify-content: space-between;
+    
+    
     li {
       text-decoration: none;
       list-style: none;
+      padding:0 20px;
+
       a {
         color: #67626a;
         text-decoration-line: none;
+        
       }
       a:hover {
         color: $color-border-btm;
         border-bottom: 2px solid $color-border-btm;
       }
-      
     }
   }
 }
