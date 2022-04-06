@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-$bg-site: #080707;
+$bg-site: #363434;
 
 * {
   margin: 0;
@@ -37,5 +37,6 @@ $bg-site: #080707;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-color: $bg-site;
+  margin-top:20px;
 }
 </style>
