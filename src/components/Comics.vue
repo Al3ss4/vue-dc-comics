@@ -15,8 +15,17 @@ export default {
 <style lang="scss" scoped>
 
 .container{
-  
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 6);
+  padding: 10px;
+  text-align: center;
+  img{
+    width: 100%;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
 }
 
 </style>

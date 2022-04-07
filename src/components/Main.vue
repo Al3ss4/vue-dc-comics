@@ -44,7 +44,7 @@ main {
   font-size: 30px;
   .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
