@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <img :src="element.thumb" />
     <h2>{{ element.series }}</h2>
   </div>
@@ -13,4 +13,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.container{
+  
+  padding: 5px;
+}
+
 </style>

@@ -1,7 +1,7 @@
 <template>
   <main>
     <div>
-      <div>
+      <div class="container">
         <Comics
           v-for="(item, index) in series"
           :key="index"
@@ -41,8 +41,11 @@ main {
   color: $color-main;
   margin: 0px 0px;
   padding: 30px 90px;
-  display: flex;
-  align-items: flex-start;
   font-size: 30px;
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 </style>
