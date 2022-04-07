@@ -1,15 +1,11 @@
 <template>
   <main>
-    <div>
-      <div class="container">
-        <Comics
-          v-for="(item, index) in series"
-          :key="index"
-          :element="item"
-        />
-      </div>
+    <div class="container">
+      <Comics v-for="(item, index) in series" :key="index" :element="item" />
+    </div>
+    <div class="text-container">
       <a href="#">
-        <h3>LOAD MORE</h3>
+        <h3 class="txt">LOAD MORE</h3>
       </a>
     </div>
   </main>
@@ -26,7 +22,7 @@ export default {
   },
   data() {
     return {
-      series: Series
+      series: Series,
     };
   },
 };
@@ -41,11 +37,24 @@ main {
   color: $color-main;
   margin: 0px 0px;
   padding: 30px 90px;
-  font-size: 30px;
-  .container{
+
+  .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+  .text-container {
+    display: flex;
+    justify-content: center;
+    a{
+       text-decoration-line: none;
+    }
+    .txt {
+      color: white;
+      background-color: #0282f9;
+      padding: 10px 20px;
+    }
   }
 }
 </style>
