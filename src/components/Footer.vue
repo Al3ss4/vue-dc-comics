@@ -195,18 +195,20 @@ $color-footer-btm: #303030;
       }
     }
   }
-  img {
-    width: 600px;
+
+      img {
+    width: 500px;
     padding: 0 20px;
     position: absolute;
-    top: -100px;
+    top: -60px;
     right: 80px;
-    z-index: 2;
   }
+  
+
 }
 .footer-btm {
   background-color: $color-footer-btm;
-  z-index: 300;
+  z-index: 900;
   padding: 25px 190px;
   height: 90px;
   .clearfix::after {
