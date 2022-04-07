@@ -18,15 +18,23 @@ export default {
   display: flex;
   flex-direction: column;
   width: calc(100% / 6);
-  padding: 5px;
+
   
   img{
-    width: 100%;
-    margin-bottom: 15px;
+   display: block;
+   width: 100%;
+   padding: 20px;
+        &:hover
+        {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
   }
   h2{
     text-transform: uppercase;
     font-size: 0.9rem;
+    padding: 0 20px;
+  
   }
 }
 
