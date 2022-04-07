@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main/>
-    <Footer/>
+    <Header />
+    <Jumbotron />
+    <Main />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+import Header from "./components/Header.vue";
+import Jumbotron from "./components/Jumbo-tron.vue";
+import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Main,
-    Footer
-  }
-}
+    Footer,
+    Jumbotron,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -30,10 +33,9 @@ $bg-site: #363434;
   box-sizing: border-box;
 }
 
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
