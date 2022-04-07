@@ -201,12 +201,13 @@ $color-footer-btm: #303030;
     position: absolute;
     top: -100px;
     right: 80px;
+    z-index: 2;
   }
 }
 .footer-btm {
   background-color: $color-footer-btm;
   z-index: 300;
-  padding: 25px 200px;
+  padding: 25px 190px;
   height: 90px;
   .clearfix::after {
     content: "";
